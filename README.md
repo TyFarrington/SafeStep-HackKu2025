@@ -1,10 +1,10 @@
-# 🚶‍♀️ HackKU 2025 - SafeStep - Accessible Fall Detection
+# HackKU 2025 - SafeStep - Accessible Fall Detection
 
 We developed SafeStep, an iOS application with a mission to improve safety and peace of mind for elderly individuals at risk of falling. Using the iPhone’s built-in motion sensors, the app detects falls in real-time and provides a simple, accessible interface for emergency contact management.
 
 ---
 
-## 💡 Inspiration
+## Inspiration
 
 As our loved ones age, ensuring their safety becomes increasingly important, and falls - especially when undetected or unnoticed - can pose a significant threat to seniors. Every year, as many as [**3 million** emergency department visits are caused due to older people falling](https://www.cdc.gov/falls/data-research/facts-stats/index.html). In 2019, [83% of hip fracture deaths and 88% of emergency department visits](https://www.cdc.gov/falls/data-research/facts-stats/index.html) were due to falls, which the CDC also finds are the most common cause of traumatic brain injuries. 
 
@@ -16,7 +16,7 @@ In short, the longer people are forced to wait after a fall, the worse the situa
 
 ---
 
-## :high_brightness: Innovation
+## Innovation
 
 - All iPhones since the iPhone 4 (2010) include a built-in triaxial accelerometer and gyroscope, capable of measuring acceleration in a 3-dimensional space
 - We recorded this data going about different movements - walking, ascending and descending stairs, sitting down, lying down, and falling, and plotted the resulting acceleration data.
@@ -26,7 +26,7 @@ In short, the longer people are forced to wait after a fall, the worse the situa
   
 ---
 
-## :chart_with_upwards_trend: Finding the Algorithm
+## Finding the Algorithm
 - With the acceleration data passed in from the iPhone's accelerometer, we had to find a way to use it to detect falls; the data is received with x, y, and z acceleration components, so we had a lot to work with
 - At first, the idea was to use primarily the y acceleration since we figured that falls would mainly consist of a downwards motion; due to the nature of the triaxial accelerometer, that wasn't quite as simple
 - We found that the triaxial accelerometer measures the y axis as being up through the charging port, lying parallel to the plane of the phone screen; the x axis lies perpendicular to that, but still parallel to the plane of the phone screen, so the phone screen would mirror the xy-plane if that makes it easier to visualize; then the z axis is the axis coming out of the screen toward you
@@ -38,21 +38,21 @@ In short, the longer people are forced to wait after a fall, the worse the situa
 
 ---
 
-## 🔑 Features
+## Features
 
-- 📱 **Intuitive UI for Seniors**  
+- **Intuitive UI for Seniors**  
   Designed with accessibility in mind — large text and clear buttons with a very simple interface and UI
 
-- 🚨 **Real-Time Fall Detection**  
+- **Real-Time Fall Detection**  
   Uses CoreMotion's accelerometer data to detect sudden movements or impacts that may indicate a fall and respond quickly
 
-- 📇 **Emergency Contact Management**  
+- **Emergency Contact Management**  
   Allows users to add and manage emergency contacts for rapid response
 
 ---
 
 
-## 🛠️ Built With
+## Built With
 
 - **SwiftUI** – For building a responsive, accessible interface.
 - **CoreMotion** – To detect device motion and identify fall events.
@@ -64,7 +64,7 @@ In short, the longer people are forced to wait after a fall, the worse the situa
 
 ---
 
-## :lock: Challenges
+## Challenges
 - **Requesting access to permission-locked data** - Even with Apple's rigid restrictions on accessing data like contact information, location data, etc., the app very clearly walks users through and even gives them a direct shortcut to what settings to modify
 - **Different acceleration data measurements** - While comparing the data gathered from HTML's DeviceMotion to the data gathered by the Swift app, we noticed a disparity in that the threshold we had found for falls did not align at all with the data in the Swift app. This took some deeper digging into the specific modules being used to find that - unbeknownst to us - one was measuring acceleration in m/s^2 and the other was measuring acceleration in multiples of the gravitational constant. While it was an easy fix, the reason behind the issue eluded us long enough to sow some doubt into whether or not our algorithm had worked correctly or not
 - **Gathering data to find a good threshold for falls** - In a lot of cases, gathering data isn't necessarily the hard part of the process, especially if it's something easily automated. Gathering the acceleration data for falls, however, wasn't that simple because it required us to, well, fall
@@ -72,7 +72,7 @@ In short, the longer people are forced to wait after a fall, the worse the situa
 
 ---
 
-## :alarm_clock: What's Next
+## What's Next
 - Fully deploying the app to the Apple app store for easy installation
 - Developing support for Android phones and other devices with built-in triaxial accelerometers
 - Allowing for both SMS alerts and email alerts on detected falls
@@ -80,7 +80,7 @@ In short, the longer people are forced to wait after a fall, the worse the situa
 
 ---
 
-## 🚀 Using the App (in its current stage)
+## Using the App (in its current stage)
 
 ### Requirements
 
