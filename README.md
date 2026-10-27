@@ -41,7 +41,7 @@ In short, the longer people are forced to wait after a fall, the worse the situa
 ## Features
 
 - **Intuitive UI for Seniors**  
-  Designed with accessibility in mind — large text and clear buttons with a very simple interface and UI
+  Designed with accessibility in mind - large text and clear buttons with a very simple interface and UI
 
 - **Real-Time Fall Detection**  
   Uses CoreMotion's accelerometer data to detect sudden movements or impacts that may indicate a fall and respond quickly
@@ -54,13 +54,13 @@ In short, the longer people are forced to wait after a fall, the worse the situa
 
 ## Built With
 
-- **SwiftUI** – For building a responsive, accessible interface.
-- **CoreMotion** – To detect device motion and identify fall events.
-- **@AppStorage** – To persist user and app state across sessions.
-- **Vercel** – For deployment of backend server.
-- **Nodemailer** – For email notification alert sending.
-- **Xcode** – Development environment used during HackKU 2025.
-- **Express & Node.js** – For providing server functionality, endpoints, and routes for the backend.
+- **SwiftUI** - For building a responsive, accessible interface.
+- **CoreMotion** - To detect device motion and identify fall events.
+- **@AppStorage** - To persist user and app state across sessions.
+- **Vercel** - For deployment of backend server.
+- **Nodemailer** - For email notification alert sending.
+- **Xcode** - Development environment used during HackKU 2025.
+- **Express & Node.js** - For providing server functionality, endpoints, and routes for the backend.
 
 ---
 
